@@ -542,3 +542,10 @@ hr {
     box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68);
     margin-left : 4%;
 }
+
+#experience .form{
+    width:75%;
+    margin : 4% auto auto 32%;
+    display:block;
+    position:relative;
+  }
