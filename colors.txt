@@ -1,9 +1,0 @@
-MyColorSpace :
-
-lightest : #FFF1D4	warm : #FFE1B7
-light : #C9BBA0		warmer : #FFCDA5
-medium : #C2A97C	warmest : #FFB4A1
-dark : #95896E
-darkest :#655E4E
-anti-light : #D0FBF2
-anti-dark : #99C3BA

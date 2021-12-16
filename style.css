@@ -171,7 +171,7 @@ hr {
     margin-left : 4%;
 }
 
-#accueil-article, #form-article, .accueil-header, .form-header {
+#accueil-article, #form-article, .accueil-header, .form-header, .ap-header  {
     border-top-left-radius : 35px;
     border-top-right-radius: 35px;
 }
@@ -197,7 +197,7 @@ hr {
 }
 
 #pic {
-    margin-top : 2%;
+    margin-top : 4vh;
     border : solid rgb(240, 240, 240) 5px;
     border-radius: 5px;
     min-width : 15vw;
@@ -260,12 +260,12 @@ hr {
 .accueil-container-right ul li {
     padding-top : 2% ;
     padding-bottom : 1.5%;
- }
+}
 
- .accueil-container span {
+.accueil-container span {
     color : black;
     font-weight: bold;
- }
+}
 
  
 #skills-article{
@@ -497,7 +497,7 @@ hr {
     color: rgb(88,88,88);
     position: absolute;
     width:100px;
-    left: -22%;
+    left: -13.2vw;
     text-align: right;
 }
 
@@ -505,7 +505,7 @@ hr {
     color: rgb(88,88,88);
     position: absolute;
     width:100px;
-    left: -50%;
+    left: -13.2vw;
     text-align: right;
 }
 
@@ -543,9 +543,42 @@ hr {
     margin-left : 4%;
 }
 
-#experience .form{
+#experiences .form{
     width:75%;
     margin : 4% auto auto 32%;
     display:block;
     position:relative;
-  }
+}
+
+#accueil-article .ap-header {
+    min-height : 20vh;
+    max-height : fit-content;
+    background-color: rgb(90, 218, 111);
+    display: block;
+    color : white;
+}
+
+.ap-header h1 {
+    font-size: 185%;
+    padding-top: 2.5%;
+}
+
+.ap-header h2 {
+    font-size: 135%;
+    padding-top: 1.25%;
+    padding-bottom:2vh;
+}
+
+.accueil-1st-container {
+    min-width: 75%;
+    max-width: 100%;
+    margin-top : 2%;
+    margin-right: 4%;
+    margin-left: 4%;
+    text-align: justify;
+}
+
+.accueil-1st-container h1 {
+    text-align: center;
+    padding-bottom : 2%;
+}
