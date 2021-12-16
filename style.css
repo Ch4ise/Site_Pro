@@ -570,8 +570,8 @@ hr {
 }
 
 .accueil-1st-container {
-    min-width: 75%;
-    max-width: 100%;
+    min-width: 45vw;
+    max-width: 45vw;
     margin-top : 2%;
     margin-right: 4%;
     margin-left: 4%;
@@ -581,4 +581,5 @@ hr {
 .accueil-1st-container h1 {
     text-align: center;
     padding-bottom : 2%;
+    color : red;
 }
