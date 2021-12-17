@@ -7,7 +7,7 @@ echo '<main class="wrappercp">';
             echo'<p>nom</p>';
             echo'<input class="champ2" type="text" name="nom" placeholder="Entrez votre nom de famille">';
             echo'<p>mail</p>';
-            echo '<input class="champ2" type="email" name="mail" placeholder="Entrez l\'email ">';
+            echo '<input class="champ2" type="email" name="email" placeholder="Entrez l\'email ">';
             echo '<p>objet</p>';
             echo'<input class="champ2" type="text" name="objet" placeholder="Entrez l\'objet ">';
             echo'<p>contenu</p>';
@@ -30,7 +30,7 @@ use PHPMailer\PHPMailer\Exception;
 
         if(isset($_POST['h-captcha-response']) && !empty($_POST['h-captcha-response']))
         {
-              $secret = 'your_secret_key';
+              $secret = '0x5Eb539ede9ec6A525e2478BC54faef86c116781C';
               $verifyResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$secret.'&response='.$_POST['h-captcha-response'].'&remoteip='.$_SERVER['REMOTE_ADDR']);
               $responseData = json_decode($verifyResponse);
               if($responseData->success)
@@ -44,17 +44,17 @@ use PHPMailer\PHPMailer\Exception;
                       $mail->isSMTP();                                      // Set mailer to use SMTP
                       $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
                       $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                      $mail->Username = 'kilianlevasseur5@gmail.com';             // SMTP username
-                      $mail->Password = 'mdp';                           // SMTP password
+                      $mail->Username = 'webbenoit.bronsard@gmail.com';             // SMTP username
+                      $mail->Password = 'WEB02Aout2003ben!!';                           // SMTP password
                       $mail->SMTPSecure = 'ssl';                            // Enable SSL encryption, TLS also accepted with port 465
                       $mail->Port = 465;                                    // TCP port to connect to
           
                       //Recipients
                       $mail->setFrom($_POST['email']);          //This is the email your form sends From
-                      $mail->addAddress('kilianlevasseur5@gmail.com'); // Add a recipient address
+                      $mail->addAddress('webbenoit.bronsard@gmail.com'); // Add a recipient address
                       $mail->isHTML(true);                                  // Set email format to HTML
                       $mail->Subject = $_POST['objet'];
-                      $mail->Body    = $_POST['form']."<br>"." mail de l'expéditeur : ".$_POST['mail'];
+                      $mail->Body    = $_POST['form']."<br>"." mail de l'expéditeur : ".$_POST['email'];
                       //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
           
                       $mail->send();
