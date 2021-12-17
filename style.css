@@ -150,11 +150,11 @@ hr {
     right : 0px;
 }
 
-@media (max-width : 1635px ) {
+@media (max-width : 1780px ) {
     .kc_fab_main_btn {
         background-color: rgba(0, 255, 85, 0.3);
-        width: 75px;
-        height: 75px;
+        width: 93.75px;
+        height: 93.75px;
         border-radius: 100%;
         background: rgba(90, 218, 111, 0.75);
         border: none;
