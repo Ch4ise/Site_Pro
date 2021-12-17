@@ -471,6 +471,12 @@ hr {
   position:relative;
 }
 
+@media (max-width:1162px){
+    .form {
+        margin : 4% auto auto 10.5vw;
+    }
+}
+
 .form ul.tl{
     margin:20px 0;
     padding:0;
