@@ -24,7 +24,7 @@
                                 echo("<div class='tl-title'>".$val."</div>");
                             }else {
                                 echo("<div class='tl-detail'>
-                                        <p><span>".$cle." : </span>".$val."</p></div>");
+                                        <p><span>".$cle." : </span>".nl2br($val)."</p></div>");
                             }
                         }
                     }

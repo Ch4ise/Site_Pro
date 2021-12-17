@@ -132,14 +132,14 @@ hr {
 
 .kc_fab_main_btn {
     background-color: rgba(0, 255, 85, 0.3);
-    width: 4vh;
+    width: 8vh;
     height: 4vw;
     border-radius: 100%;
     background: rgba(90, 218, 111, 0.75);
     border: none;
     outline: none;
     color: #FFF;
-    font-size: 25px;
+    font-size: 200%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     transition: .3s;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
