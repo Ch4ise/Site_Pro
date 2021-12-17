@@ -16,6 +16,7 @@ function htmlHeader():void {
                     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
                     <link href='https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap' rel='stylesheet'>
                     <link rel='stylesheet' href='style.css'>
+                    <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
                 </head>
                 <body> ";
 }
