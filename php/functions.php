@@ -15,6 +15,7 @@ function htmlHeader():void {
                     <link rel='preconnect' href='https://fonts.googleapis.com'>
                     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
                     <link href='https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap' rel='stylesheet'>
+                    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css'>
                     <link rel='stylesheet' href='style.css'>
                     <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
                 </head>
@@ -24,14 +25,18 @@ function htmlHeader():void {
 function createNavBar() {
     $navbar=\file_get_contents("data/navbar.yaml");
     $navbar_data=yaml_parse($navbar);
-    echo "  <header id='en-tete'> 
-                <h1> <span>Bronsard</span> Benoît </h1>   
-                <ul>";
+    echo "  <div class='nav'>
+                <h1> <span>Bronsard</span> Benoît </h1>  
+                <label for='toggle'>&#9776</label>
+                <input type='checkbox' id='toggle'>
+                <div class='menu'>
+                    <ul>";
     foreach ($navbar_data as $navlink=>$navtitle){
         echo "      <li><a href='#".$navlink."'>".$navtitle."</a></li>";
     }
-    echo "      </ul>
-            </header>";
+    echo "          </ul>
+                </div>
+            </div>";
 }
 
 function createSection() {

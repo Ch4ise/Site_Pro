@@ -13,7 +13,7 @@ body {
 
 /* -- NAVBAR -- */
 
-#en-tete {
+.nav {
     padding-top : 15px;;
     padding-bottom: 15px;;
     font-weight: 700;
@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
 }
 
-#en-tete h1 {
+.nav h1 {
     font-weight: 500;
     font-size : 1.75rem;
     margin-left : 1vw;
@@ -31,7 +31,7 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
-#en-tete span {
+.nav span {
     color:rgb(90, 218, 111);
     font-weight: 500;
     font-size : 1.75rem;
@@ -66,6 +66,36 @@ ul li a:hover {
     text-decoration-color: greenyellow;
     color : black;
     zoom : 1.05;
+}
+
+#toggle{
+    display: none;
+}
+
+@media (max-width:1050px){
+    .checkbtn {
+        display : block ;
+        margin-right : 20px;
+        font-size: 28.5px;
+        cursor: pointer;
+    }
+
+    .menu {
+        width : 100% ;
+        text-align : center ;
+        display : none;
+    }
+
+    .menu a{
+        display : flex;
+        flex-direction: column;
+        border-bottom: 1px solid blue;
+        margin : 0 ;
+    }
+
+    #toggle:checked + .menu {
+        display : block ;
+    }
 }
 
 
