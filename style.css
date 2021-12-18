@@ -68,15 +68,15 @@ ul li a:hover {
     zoom : 1.05;
 }
 
-#toggle{
+.nav label, #toggle{
     display: none;
 }
 
 @media (max-width:1050px){
-    .checkbtn {
+    .nav label {
         display : block ;
-        margin-right : 20px;
-        font-size: 28.5px;
+        margin: 7.5px 20px 0 0;
+        font-size: 22.5px;
         cursor: pointer;
     }
 
