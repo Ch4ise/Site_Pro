@@ -190,7 +190,7 @@ hr {
 #accueil-article{
     min-height : 87vh;
     max-width: 90vw;
-    max-height : 87vh;
+    max-height : fit-content;
     min-width: 90vw;
     text-align: center;
     background-color: white;
@@ -229,9 +229,8 @@ hr {
     margin-top : 4vh;
     border : solid rgb(240, 240, 240) 5px;
     border-radius: 5px;
-    min-width : 15vw;
-    min-height : 15vw;
-    max-height : 20vw;
+    min-width : 25%;
+    min-height : 15%;
     background-color:rgb(240, 240, 240) ;
 }
 
