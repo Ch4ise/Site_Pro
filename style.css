@@ -466,7 +466,7 @@ hr {
 
 .form{
   width:75%;
-  margin : 4% auto auto 22.5vw;
+  margin : 4% auto auto 25%;
   display:block;
   position:relative;
 }
@@ -475,6 +475,11 @@ hr {
     .form {
         margin : 4% auto auto 10.5vw;
     }
+
+    #experiences .form{
+        margin : 4% auto auto 13vw;
+    }
+    
 }
 
 .form ul.tl{
@@ -578,15 +583,8 @@ hr {
     margin-left : 4%;
 }
 
-#experiences .form{
-    width:75%;
-    margin : 4% auto auto 32%;
-    display:block;
-    position:relative;
-}
-
 #accueil-article .ap-header {
-    min-height : 20vh;
+    min-height : 25%;
     max-height : fit-content;
     background-color: rgb(90, 218, 111);
     display: block;
@@ -595,13 +593,13 @@ hr {
 
 .ap-header h1 {
     font-size: 185%;
-    padding-top: 2.5%;
+    padding-top: 20px;
 }
 
 .ap-header h2 {
     font-size: 135%;
     padding-top: 1.25%;
-    padding-bottom:2vh;
+    padding-bottom:30px;
 }
 
 .p-2nd-container {
