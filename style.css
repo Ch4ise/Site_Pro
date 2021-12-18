@@ -188,7 +188,7 @@ hr {
 
 
 #accueil-article{
-    min-height : 87vh;
+    min-height : 75vh;
     max-width: 90vw;
     max-height : fit-content;
     min-width: 90vw;
@@ -231,6 +231,7 @@ hr {
     border-radius: 5px;
     min-width : 25%;
     min-height : 15%;
+    max-height : 15%;
     background-color:rgb(240, 240, 240) ;
 }
 
