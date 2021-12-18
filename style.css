@@ -229,9 +229,10 @@ hr {
     margin-top : 4vh;
     border : solid rgb(240, 240, 240) 5px;
     border-radius: 5px;
-    min-width : 25%;
-    min-height : 15%;
-    max-height : 15%;
+    min-width : 300px;
+    max-width: 300px;
+    min-height : 300px;
+    max-height : 300px;
     background-color:rgb(240, 240, 240) ;
 }
 
