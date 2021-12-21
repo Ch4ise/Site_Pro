@@ -74,7 +74,7 @@ nav label, #toggle{
 }
 
 
-@media (max-width:1110px){
+@media screen and (max-width:1110px){
     nav label {
         display : block ;
         margin: 0.675% 20px 0 0;
