@@ -673,8 +673,17 @@ hr {
     margin-top : 7%;
 }
 
+.ap-3rd-container ul li {
+    padding-bottom: 6.5%;
+}
+
+.ap-3rd-container ul li span{
+    font-weight: 900;
+}
+
 .ap-3rd-container-left, .ap-3rd-container-right {
     display : flex ;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
