@@ -1,6 +1,9 @@
 <?php
 
-echo '<main class="wrappercp">';
+echo("<article id='form-article'>
+        <div class='form-header'>
+            <h1>Contactez-moi</h1>
+        </div>");
     echo'<div class="contact2">';
         echo '<h2>titre</h2>';
         echo'<form action="index.php#contact" method="post">';
