@@ -714,3 +714,8 @@ hr {
     margin-left : 4%;
     text-align : left;
 }
+
+.contact-container-right h2 {
+    margin-left : 10% ;
+    font-family: 'Press Start 2P', cursive;
+}
