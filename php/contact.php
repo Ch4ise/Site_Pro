@@ -13,9 +13,9 @@
                         <p>Nom*</p>
                         <input type='text' class='contact-square' name='nom' placeholder='Entrez votre nom...' required='required'>
                         <p>E-mail*</p>
-                        <input type='mail' class='contact-square' name='nom' placeholder='Entrez votre e-mail...' required='required'>
+                        <input type='mail' class='contact-square' name='email' placeholder='Entrez votre e-mail...' required='required'>
                         <p>Objet*</p>
-                        <input type='text' class='contact-square' name='nom' placeholder='Entrez votre objet...' required='required'>
+                        <input type='text' class='contact-square' name='objet' placeholder='Entrez votre objet...' required='required'>
                         <p>Contenu du mail</p>
                         <textarea class='contact-message' name='mess' placeholder='Entrez votre commentaire'></textarea><br>
                         <input type='submit' id='submit' value='Valider' />
