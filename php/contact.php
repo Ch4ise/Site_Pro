@@ -20,10 +20,7 @@
                         <textarea class='contact-message' name='mess' placeholder='Entrez votre commentaire'></textarea><br>
                         <div class='h-captcha' data-sitekey='ccf9b1e1-9657-4a46-a4fa-92d88f3405e7'></div>
                         <input type='submit' id='submit' value='Valider' />
-                </form>
-            </div>
-        </div>
-    </article>");
+                </form>");
 
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
@@ -64,7 +61,10 @@ use PHPMailer\PHPMailer\Exception;
                       //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
           
                       $mail->send();
-                      echo '<div><h2>Votre message à bien été envoyé</h2></div>';
+                      echo("<h2>Votre message à bien été envoyé</h2>
+                                </div>
+                            </div>
+                        </article>");
                   } catch (Exception $e) {
                       echo 'Votre message à pas pu être envoyé.';
                       echo 'Mailer Error: ' . $mail->ErrorInfo;
