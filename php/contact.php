@@ -5,7 +5,7 @@
     echo("<div class='contact-container'>
                 <div class='contact-container-left'>
                     <h2>N'hésitez pas à me contacter !</h2>
-                    <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.3413612478207!2d-0.3984980841501391!3d49.32675567556768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a5f010bac41bb%3A0x2cb1a5fb1ceef5aa!2s16%20Rue%20de%20la%20Passe%20d&#39;Aval%2C%2014750%20Saint-Aubin-sur-Mer!5e0!3m2!1sfr!2sfr!4v1640183326258!5m2!1sfr!2sfr' width='80%' height='80%' style='border:0;'' allowfullscreen='' loading='lazy'></iframe>
+                    <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.3413612478207!2d-0.3984980841501391!3d49.32675567556768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a5f010bac41bb%3A0x2cb1a5fb1ceef5aa!2s16%20Rue%20de%20la%20Passe%20d&#39;Aval%2C%2014750%20Saint-Aubin-sur-Mer!5e0!3m2!1sfr!2sfr!4v1640183326258!5m2!1sfr!2sfr' width='80%' height='80%' style='border: 5px solid white;'' allowfullscreen='' loading='lazy'></iframe>
                 </div>")  ; 
 
     echo(   "<div class='contact-container-right'>
@@ -17,7 +17,8 @@
                         <p>Objet*</p>
                         <input type='text' class='contact-square' name='nom' placeholder='Entrez votre objet...' required='required'>
                         <p>Contenu du mail</p>
-                        <textarea class='contact-message' name='comment' placeholder='Entrez votre commentaire'></textarea><br>
+                        <textarea class='contact-message' name='mess' placeholder='Entrez votre commentaire'></textarea><br>
+                        <input type='submit' id='submit' value='Valider' />
                     </form>
                     <div class='h-captcha' data-sitekey='ccf9b1e1-9657-4a46-a4fa-92d88f3405e7'></div>
             </div>
@@ -59,7 +60,7 @@ use PHPMailer\PHPMailer\Exception;
                       $mail->addAddress('webbenoit.bronsard@gmail.com'); // Add a recipient address
                       $mail->isHTML(true);                                  // Set email format to HTML
                       $mail->Subject = $_POST['objet'];
-                      $mail->Body    = $_POST['form']."<br>"." mail de l'expéditeur : ".$_POST['email'];
+                      $mail->Body    = $_POST['mess']."<br>"." mail de l'expéditeur : ".$_POST['email'];
                       //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
           
                       $mail->send();
