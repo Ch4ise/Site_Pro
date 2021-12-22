@@ -687,3 +687,21 @@ hr {
     flex-wrap: wrap;
 }
 
+.contact-container {
+    display : flex ;
+    flex-direction: row;
+    min-height: 45vh;
+}
+
+.contact-container-left {
+    max-width: 37.5%;
+    min-width: 37.5%;
+    background-color: rgb(90, 218, 111);
+}
+
+#form-article .contact-container-right {
+    max-width: 62.5%;
+    min-width: 62.5%;
+    text-align: left;
+    padding-left: 500px;
+}
