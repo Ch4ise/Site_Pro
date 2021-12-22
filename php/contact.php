@@ -18,9 +18,9 @@
                         <input type='text' class='contact-square' name='objet' placeholder='Entrez votre objet...' required='required'>
                         <p>Contenu du mail</p>
                         <textarea class='contact-message' name='mess' placeholder='Entrez votre commentaire'></textarea><br>
+                        <div class='h-captcha' data-sitekey='ccf9b1e1-9657-4a46-a4fa-92d88f3405e7'></div>
                         <input type='submit' id='submit' value='Valider' />
-                    </form>
-                    <div class='h-captcha' data-sitekey='ccf9b1e1-9657-4a46-a4fa-92d88f3405e7'></div>
+                </form>
             </div>
         </div>
     </article>");
@@ -74,6 +74,6 @@ use PHPMailer\PHPMailer\Exception;
               {
                   $errMsg = 'Robot verification failed, please try again.';
               }
-         }
+        }
     }
 ?>
