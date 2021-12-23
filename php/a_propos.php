@@ -17,8 +17,13 @@
                 foreach($ap2_tab as $cle=>$val){
                     if($cle=='Presentation'){
                         echo("<div class='ap-2nd-container'>
-                                <h2>Présentation</h2>
+                                <div>
+                                    <h2>Présentation</h2>
                                     <p>".nl2br($val)."</p>
+                                </div>
+                                <div class='pic'>
+                                    <img src=''>
+                                </div>
                             </div>
                             <div class='ap-3rd-container'>");
                     }

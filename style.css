@@ -271,7 +271,7 @@ hr {
     margin-top : 1.5%;
 }
 
-#pic {
+.pic {
     margin-top : 4vh;
     border : solid rgb(240, 240, 240) 5px;
     border-radius: 5px;
@@ -652,6 +652,7 @@ hr {
     height : auto;
     text-align: justify;
     margin-top : 1%;
+    display: flex;
 }
 
 .ap-2nd-container p{

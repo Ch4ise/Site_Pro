@@ -1,6 +1,6 @@
 <article id="accueil-article">
     <div class='accueil-header'>
-        <div id='pic'>
+        <div class='pic'>
             <!--<img src='img/pp.jpg'>-->
         </div>
         <div id='txt'>
