@@ -30,6 +30,7 @@
                                         echo("<li><span>".$key." : </span>".nl2br($eng)."</li>");
                                     }
                         echo("</ul>
+                                    <br><p></p>
                             </div>");
                     }
                     if($cle=='Parcours'){
