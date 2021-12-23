@@ -5,14 +5,14 @@
         </div>
         <div id='txt'>
             <h1>Benoît Bronsard</h1>
-            <h2>- Etudiant en BTS SIO -</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis aliquam est at sagittis. Fusce viverra, nibh eget gravida dictum. </p>
+            <h2>- Etudiant en BTS SIO Spé. SISR-</h2>
+            <h3>Je suis un élève appliqué, motivé et qui a soif d'apprendre. </h3>
         </div>
     </div>
     <div class='accueil-container'>
         <div class='accueil-container-left'>
             <span><h2>A propos de Moi</h2></span>
-            <p>Actuellement en 1ère année de BTS SIO, je suis à la recherche d'un stage.</p>
+            <p>Actuellement en 1ère année de BTS SIO, j'ai choisi l'option SISR : Réseaux et Cybersécurité.</p>
             <p>Attiré par l’informatique et les nouvelles technologies depuis mon enfance, je souhaite me diriger vers la Cybersécurité. C’est un enjeu majeur de nos jours pour les entreprises et atteindre cet objectif se fera par l’acquisition des savoir-faire d’un vrai professionnel.</p>
         </div>
         <div class='accueil-container-right'>
@@ -25,7 +25,8 @@
                 foreach($datas as $cle=>$val){
                     echo("<li><span>".$cle." :</span> ".$val."</li>");
                 }
-                echo("</ul>");
+                echo("</ul>
+                      <a href='' download='img/icon-insta.png'>TELECHARGER CV</a>");
             ?>
         </div>
     </div>

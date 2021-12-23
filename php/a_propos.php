@@ -8,7 +8,7 @@
     <div class='ap-header'>
         <div>
             <h1>Benoît Bronsard</h1>
-            <h2>- Etudiant en BTS SIO -</h2>
+            <h2>- Etudiant en BTS SIO Spé. SISR-</h2>
         </div>
     </div>
     <div class='ap-container'>

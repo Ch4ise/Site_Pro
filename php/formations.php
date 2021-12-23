@@ -8,6 +8,7 @@
 <article id="form-article">
     <div class='form-header'>
         <h1>Formations</h1>
+        <a href='' download='img/icon-insta.png'>TELECHARGER CV</a>
     </div>
     <div class='accueil-container'>
         <div class="form">

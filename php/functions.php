@@ -67,8 +67,8 @@ function htmlfooter() {
                             <p>Online</p>
                             <div class='footer-img'>
                                 <a href='https://www.instagram.com/benoit_bsd/' target='_blank'><img src='img/icon-insta.png'></a>
-                                <img src='img/icon-twitter.png'>
-                                <img src='img/icon-linkedin.png'>
+                                <a href='https://www.twitter.com/benoitaulettre/' target='_blank'><img src='img/icon-twitter.png'></a>
+                                <a href='https://www.linkedin.com/' target='_blank'><img src='img/icon-linkedin.png'></a>
                             </div>
                         </div>
                     </div>
