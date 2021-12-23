@@ -693,8 +693,8 @@ hr {
 }
 
 .contact-container-left {
-    max-width: 62.5%;
-    min-width: 62.5%;
+    max-width: 55%;
+    min-width: 55%;
     background-color: rgb(90, 218, 111);
     padding-bottom : 10%;
     border-top-left-radius: 45px;
@@ -709,8 +709,8 @@ hr {
 }
 
 .contact-container-right {
-    max-width: 37.5%;
-    min-width: 37.5%;
+    max-width: 45%;
+    min-width: 45%;
     margin-left : 4%;
     text-align : left;
 }

@@ -63,6 +63,7 @@ use PHPMailer\PHPMailer\Exception;
           
                       $mail->send();
                       echo("<h2>Votre message à bien été envoyé</h2>
+                                <p></p>
                                 </div>
                             </div>
                         </article>");
