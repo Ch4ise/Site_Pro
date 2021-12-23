@@ -1,9 +1,9 @@
 <?php
 
-    echo("<article id='form-article'>");
+    echo("<article>");
 
-    echo("<div class='contact-container'>
-                <div class='contact-header'>
+    echo("<div class='container'>
+                <div class='header'>
                     <h1>N'hésitez pas à me contacter !</h1>
                 </div>")  ; 
 

@@ -187,7 +187,7 @@ hr {
 
 /* < ----- ACCUEIL ----- > */
 
-#accueil article, #formations article, #a_propos article{
+#accueil article, #formations article, #a_propos article, #experiences article, #contact article{
     min-height : 75vh;
     width: 90vw;
     max-height : fit-content;
@@ -239,7 +239,7 @@ hr {
 
 }
 
-#accueil .container, #formations .container {
+#accueil .container, #formations .container, #experiences .container{
     display : flex;
     text-align: justify;
     flex-direction: row;
@@ -426,7 +426,7 @@ hr {
     margin : 0 0 2% 27%;
 }
 
-/* < ----- FORMATIONS ----- > */
+/* < ----- FORMATIONS et EXPERIENCES ----- > */
 
 .form{
   width:75%;
@@ -513,13 +513,13 @@ hr {
 }
 
 
-#formations .header {
+#formations .header, #experiences .header {
     height : 15vh;
     background-color: var(--color-green);
     text-align: center;
 }
 
-#formations h1 {
+#formations h1, #experiences h1 {
     max-width: 30vw;
     min-width: 15vw;
     color : rgb(240, 240, 240);
@@ -528,11 +528,12 @@ hr {
     padding-bottom: 37.5px;
 }
 
-#formations span {
+#formations span, #experiences span {
     color :rgb(88, 88, 88);
     font-weight: bold;
 }
 
+/* < ----- A PROPOS ----- > */
 
 #a_propos .header {
     min-height : 25%;
@@ -597,18 +598,20 @@ hr {
     flex-wrap: wrap;
 }
 
-#contact #form-article {
+/* < ----- CONTACT ----- > */
+
+#contact article {
     width: 50vw;
     margin-left: 24%;
 }
 
-.contact-header {
+#contact .header {
     background-color: var(--color-green);
     height: 10vh;
     border-radius: 35px 35px 0 0;
 }
 
-.contact-header h1{
+#contact .header h1{
     font-size: 1.75rem;
     color : white ;
     padding-top : 2.75%;
@@ -675,6 +678,8 @@ textarea::placeholder {
     color: white;
 }
 
+/* < ----- FOOTER ----- > */
+
 footer {
     position : fixed ;
     bottom : 0;
@@ -720,6 +725,8 @@ footer p {
 .footer-img img {
     width: 20px;
 }
+
+/* < ----- CV ----- > */
 
 #accueil a{
     text-decoration: none ;
