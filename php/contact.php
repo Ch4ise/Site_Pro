@@ -18,7 +18,10 @@
                         <p>Contenu du mail</p>
                         <textarea class='contact-message' name='mess' placeholder='Entrez votre commentaire...'></textarea><br><br>
                         <div class='h-captcha' data-sitekey='ccf9b1e1-9657-4a46-a4fa-92d88f3405e7'></div><br>
-                        <input type='submit' id='submit' value='Valider' />
+                        <div class='rgpd'>
+                            <input type='submit' id='submit' value='Valider' />
+                            <p>Les informations entrées sur le formulaire ne servent qu'à envoyer un mail.<br>Le destintaire de ce mail est Benoît Bronsard et personne d'autre.<br> Les données ne sont utilisées qu'à des fins professionnelles et ne sont pas conservées.</p>
+                        </div>
                         <p></p>
                 </form>");
 
