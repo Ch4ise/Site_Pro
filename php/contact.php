@@ -62,13 +62,13 @@ use PHPMailer\PHPMailer\Exception;
                       //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
           
                       $mail->send();
-                      echo("<h2>Votre message à bien été envoyé</h2>
+                      echo("<h2>Votre message a été envoyé.</h2>
                                 <p></p>
                                 </div>
                             </div>
                         </article>");
                   } catch (Exception $e) {
-                      echo 'Votre message à pas pu être envoyé.';
+                      echo "Votre message n'a pu être envoyé.";
                       echo 'Mailer Error: ' . $mail->ErrorInfo;
                   }
               }
