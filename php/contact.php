@@ -1,4 +1,5 @@
 <?php
+    $ini = parse_ini_file('config.ini')
 
     echo("<article>");
 
@@ -17,7 +18,7 @@
                         <input type='text' class='contact-square' name='objet' placeholder='Entrez votre objet...' required='required'>
                         <p>Contenu du mail</p>
                         <textarea class='contact-message' name='mess' placeholder='Entrez votre commentaire...'></textarea><br><br>
-                        <div class='h-captcha' data-sitekey='ccf9b1e1-9657-4a46-a4fa-92d88f3405e7'></div><br>
+                        <div class='h-captcha' data-sitekey='".$ini['captcha-data-key']."'></div><br>
                         <div class='rgpd'>
                             <input type='submit' id='submit' value='Valider' />
                             <p>Les informations entrées sur le formulaire ne servent qu'à envoyer un mail.<br>Le destintaire de ce mail est Benoît Bronsard et personne d'autre.<br> Les données ne sont utilisées qu'à des fins professionnelles et ne sont pas conservées.</p>
@@ -36,7 +37,7 @@ use PHPMailer\PHPMailer\Exception;
 
         if(isset($_POST['h-captcha-response']) && !empty($_POST['h-captcha-response']))
         {
-              $secret = '0x5Eb539ede9ec6A525e2478BC54faef86c116781C';
+              $secret = $ini['secret-captcha-key'];
               $verifyResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$secret.'&response='.$_POST['h-captcha-response'].'&remoteip='.$_SERVER['REMOTE_ADDR']);
               $responseData = json_decode($verifyResponse);
               if($responseData->success)
@@ -50,14 +51,14 @@ use PHPMailer\PHPMailer\Exception;
                       $mail->isSMTP();                                      // Set mailer to use SMTP
                       $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
                       $mail->SMTPAuth = true;                               // Enable SMTP authentication
-                      $mail->Username = 'webbenoit.bronsard@gmail.com';             // SMTP username
-                      $mail->Password = 'WEB02Aout2003ben!!';                           // SMTP password
+                      $mail->Username = $ini['id'];             // SMTP username
+                      $mail->Password = $ini['mdp'];                           // SMTP password
                       $mail->SMTPSecure = 'ssl';                            // Enable SSL encryption, TLS also accepted with port 465
                       $mail->Port = 465;                                    // TCP port to connect to
           
                       //Recipients
                       $mail->setFrom($_POST['email']);          //This is the email your form sends From
-                      $mail->addAddress('webbenoit.bronsard@gmail.com'); // Add a recipient address
+                      $mail->addAddress($ini['id']); // Add a recipient address
                       $mail->isHTML(true);                                  // Set email format to HTML
                       $mail->Subject = $_POST['objet'];
                       $mail->Body    = $_POST['mess']."<br>"." mail de l'expéditeur : ".$_POST['email'];
