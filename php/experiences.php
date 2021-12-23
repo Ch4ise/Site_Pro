@@ -8,7 +8,7 @@
 <article id="form-article">
     <div class='form-header'>
         <h1>Expériences</h1>
-        <a href='' download='img/icon-insta.png'>TELECHARGER CV</a>
+        <a href='img/BRONSARD Benoit - CV.pdf' download=''>TELECHARGER CV</a>
     </div>
     <div class='accueil-container'>
         <div class="form">

@@ -5,12 +5,12 @@
     $formation2=yaml_parse($formation);
 ?>
 
-<article id="form-article">
-    <div class='form-header'>
+<article>
+    <div class='header'>
         <h1>Formations</h1>
-        <a href='' download='img/icon-insta.png'>TELECHARGER CV</a>
+        <a href='img/BRONSARD Benoit - CV.pdf' download=''>TELECHARGER CV</a>
     </div>
-    <div class='accueil-container'>
+    <div class='container'>
         <div class="form">
             <ul class="tl">
                 <?php

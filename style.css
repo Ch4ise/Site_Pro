@@ -1,9 +1,13 @@
+:root {
+    --color-green : rgb(90, 218, 111);
+}
 
 * {
     margin: 0px;
     padding: 0px;
     border : 0px;
     font-family: 'K2D', sans-serif;
+
 }
 
 body {
@@ -67,8 +71,6 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    text-decoration-color: greenyellow;
     color : black;
     zoom : 1.05;
 }
@@ -173,71 +175,22 @@ hr {
     max-width:2vw ;
 }
 
-
-/* -- BUTTON -- */
-
-/*.kc_fab_main_btn {
-    background-color: rgba(0, 255, 85, 0.3);
-    width: 5vw;
-    height: 10%;
-    border-radius: 100%;
-    background: rgba(90, 218, 111, 0.75);
-    border: none;
-    outline: none;
-    color: #FFF;
-    font-size: 200%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transition: .3s;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    float : right;
-    margin-right : 15px;
-    position : fixed ;
-    bottom: 12px;
-    right : 0px;
+#accueil article, #accueil .header, #formations article, #formations .header, #competences article, #experiences article, #experiences .header, #contact article, #contact .header, #a_propos article, #a_propos .header {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
 }
 
-@media (max-width : 1780px ) {
-    .kc_fab_main_btn {
-        background-color: rgba(0, 255, 85, 0.3);
-        width: 93.75px;
-        height: 93.75px;
-        border-radius: 100%;
-        background: rgba(90, 218, 111, 0.75);
-        border: none;
-        outline: none;
-        color: #FFF;
-        font-size: 200%;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        transition: .3s;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        float : right;
-        margin-right : 15px;
-        position : fixed ;
-        bottom: 12px;
-        right : 0px;
-    }
-
-    .kc_fab_main_btn:focus {
-        transform: scale(1.1);
-        transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-    }
+#accueil article, #accueil .container, #formations article, #formations .container, #competences article, #experiences article, #experiences .container, #contact article, #contact .container, #a_propos article, #a_propos .container {
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
-  
-.kc_fab_main_btn:focus {
-    transform: scale(1.1);
-    transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-*/
 
-#accueil-article{
+/* < ----- ACCUEIL ----- > */
+
+#accueil article, #formations article, #a_propos article{
     min-height : 75vh;
-    max-width: 90vw;
+    width: 90vw;
     max-height : fit-content;
-    min-width: 90vw;
     text-align: center;
     background-color: white;
     border-radius: 45px;
@@ -246,19 +199,9 @@ hr {
     margin-left : 4%;
 }
 
-#accueil-article, #form-article, .accueil-header, .form-header, .ap-header  {
-    border-top-left-radius : 35px;
-    border-top-right-radius: 35px;
-}
 
-#accueil-article, .accueil-container{
-    border-bottom-left-radius : 35px;
-    border-bottom-right-radius: 35px;
-}
-
-#accueil-article .accueil-header {
-    min-height : 30vh;
-    max-height : 30vh;
+#accueil .header {
+    height: 30vh;
     background-color: rgb(90, 218, 111);
     display: flex;
     justify-content: space-around;
@@ -271,23 +214,6 @@ hr {
     margin-top : 1.5%;
 }
 
-.pic {
-    margin-top : 4vh;
-    border : solid rgb(240, 240, 240) 5px;
-    border-radius: 5px;
-    min-width : 300px;
-    max-width: 300px;
-    min-height : 300px;
-    max-height : 300px;
-    background-color:rgb(240, 240, 240) ;
-}
-
-/*img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}*/
-
 #txt h1 {
     font-size: 195%;
     margin-top : 2%;
@@ -299,53 +225,77 @@ hr {
     padding-bottom: 6%;
 }
 
-.accueil-container {
+.pic {
+    margin-top : 1.25%;
+    width : 35vw;
+    height: 30vh
+}
+
+.pic img {
+    max-width: 120%;
+    max-height: 120%;
+    object-fit: contain;
+    border : 5px solid white ;
+
+}
+
+#accueil .container, #formations .container {
     display : flex;
     text-align: justify;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.accueil-container-left {
+#accueil .container-left {
     max-width : 35vw ;
     min-width: 25vw;
-    margin-top : 8.5%;
-    margin-left : 4%;
+    margin : 8.5% 0 0 4%; 
 }
 
-.accueil-container-left h2{
+#accueil .container-left h2{
     padding-bottom: 3.5%;
 }
 
-.accueil-container-left p{
+#accueil .container-left p{
     padding-bottom: 2.5%;
 }
 
-.accueil-container-right {
+#accueil .container-right {
     max-width : 45vw ;
     min-width: 25vw;
     max-height : 20vh;
     margin-top : 5.75%;
 }
 
-.accueil-container-right ul{
+#accueil .container-right ul{
    display : flex ;
    flex-direction: column;
    padding-bottom: 4%;
 }
 
-.accueil-container-right ul li {
-    padding-top : 2% ;
-    padding-bottom : 1.5%;
+#accueil .container-right ul li {
+    padding : 2% 0 1.5% 0;
 }
 
-.accueil-container span {
+#accueil .container span {
     color : black;
     font-weight: bold;
 }
 
+/* < ----- COMPETENCES ----- > */
+
+#a_propos .presentation {
+    width: 40vw;
+}
+
+
+#a_propos img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 45px;
+}
  
-#skills-article{
+#competences article{
     min-height : 87vh;
     max-width: 90vw;
     max-height: fit-content;
@@ -362,79 +312,97 @@ hr {
     position : absolute;
 }
 
-.skills-container-left {
+/* < -- GAUCHE -- > */
+
+#competences .container-left {
     max-height : 100%;
     position : relative;
-    max-width: 45vw;
-    min-width: 45vw;
-    background-color: rgb(90, 218, 111);
+    width: 45vw;
+    background-color: var(--color-green);
     text-align : center;
     padding-bottom : 70px;
+    border-radius : 35px 0 0 35px;
 }
 
-.skills-container-right {
-    height: auto;
-    max-width: 45vw;
-    min-width: 45vw;
-    background-color: rgb(255, 255, 255);
-}
-
-#skills-accueil, .skills-container-left{
-    border-bottom-left-radius : 25px;
-    border-top-left-radius: 25px;
-}
-
-#skills-accueil, .skills-container-right{
-    border-bottom-right-radius : 25px;
-    border-top-right-radius: 25px;
-}
-
-.skills-header-left {
+#competences .header-left {
     color : white ;
+    margin-top : 3%;
+    font-weight: bold;
+    font-size : 128%;   
+}
+
+#competences .header-left hr {
+    background-color: white;
+    height: 4px;
+    width : 45%;
+    margin-left : 27%;
+}
+
+#competences .container-left-content, #competences .container-right-content {
+    width: 75%;
+    min-height: fit-content;
+    margin : 4% 0 0 12%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68); 
+    box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68);
+    padding : 3% 0 4% 0;
+}
+
+#competences .container-left-content {
+    background-color: white;
+}
+
+#competences .container-left-content span {
+    color : var(--color-green);
+    font-weight: bolder;
+}
+
+/* < -- DROITE --> */
+
+#competences .container-right {
+    height: auto;
+    width: 45vw;
+    background-color: white;
+    border-radius : 0 35px 35px 0;
+}
+
+#competences .header-right {
+    color : rgb(94, 94, 94) ;
     margin-top : 3%;
     font-weight: bold;
     font-size : 128%;
 }
 
-.skills-hr-left {
-    background-color: white;
-    max-height : 4px;
-    min-height : 4px;
-    min-width: 45%;
-    max-width: 45%;
+#competences .header-right hr {
+    background-color: rgb(94, 94, 94);
+    height: 4px;
+    width : 45%;
     margin-left : 27%;
 }
 
-.skills-container-left-content {
-    background-color: white;
-    max-width: 75% ;
-    min-width: 75%;
-    min-height: fit-content;
-    margin-top: 4%;
-    margin-left : 12%;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68); 
-    box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68);
-    padding-bottom: 4%;
-    padding-top: 3%;
+#competences .container-right-content {
+    background-color: var(--color-green);
+    color : white;
 }
 
-.skills-container-left-content span {
-    color : rgb(90, 218, 111);
+#competences .container-right-content span {
+    color : rgb(94, 94, 94);
     font-weight: bolder;
 }
 
-.bar1{
+.bar1, .bar2{
     position: relative;
     border: 2px solid rgba(153,153,153,0.9);
     border-radius: 20px;
     width : 90%;
-    margin-left : 5%;
-    margin-bottom : 1%;
-  
+    margin : 0 0 1% 5%;
 }
 
-.bar1 div{
+.bar2 {
+    border: 2px solid white;
+}
+
+.bar1 div, .bar2 div{
     position: relative;
     width: 0;
     height: 9px;
@@ -442,35 +410,8 @@ hr {
     background-color: rgba(153,153,153,0.9);
 }
 
-.skills-header-right {
-    color : rgb(94, 94, 94) ;
-    margin-top : 3%;
-    font-weight: bold;
-    font-size : 128%;
-}
-
-.skills-hr-right {
-    background-color: rgb(94, 94, 94);
-    max-height : 4px;
-    min-height : 4px;
-    min-width: 45%;
-    max-width: 45%;
-    margin-left : 27%;
-}
-
-.skills-container-right-content {
-    background-color: rgb(90, 218, 111);
-    max-width: 75% ;
-    min-width: 75%;
-    min-height: fit-content;
-    margin-top: 4%;
-    margin-left : 12%;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68); 
-    box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68);
-    padding-bottom: 3%;
-    padding-top: 1%;
-    color : white;
+.bar2 div{
+    background-color: white;
 }
 
 .min-title {
@@ -480,37 +421,12 @@ hr {
 
 .min-title-hr {
     background-color: white;
-    max-height : 2px;
-    min-height : 2px;
-    min-width: 45%;
-    max-width: 45%;
-    margin-left : 27%;
-    margin-top : 0;
-    margin-bottom: 2%;
+    height : 2px;
+    width: 45%;
+    margin : 0 0 2% 27%;
 }
 
-.skills-container-right-content span {
-    color : rgb(94, 94, 94);
-    font-weight: bolder;
-}
-
-.bar2{
-    position: relative;
-    border: 2px solid white;
-    border-radius: 20px;
-    width : 90%;
-    margin-left : 5%;
-    margin-bottom : 1%;
-  
-}
-
-.bar2 div{
-    position: relative;
-    width: 0;
-    height: 9px;
-    border-radius: 10px;
-    background-color: white;
-}
+/* < ----- FORMATIONS ----- > */
 
 .form{
   width:75%;
@@ -547,8 +463,7 @@ hr {
 
 .form ul.tl li{
     list-style: none;
-    margin:auto;
-    margin-left:200px;
+    margin: auto auto auto 200px;
     min-height:50px;
     border-left:1px dashed rgb(127, 235, 145);
     padding:0 0 50px 30px;
@@ -598,14 +513,13 @@ hr {
 }
 
 
-#form-article .form-header {
-    min-height : 15vh;
-    max-height : 15vh;
-    background-color: rgb(90, 218, 111);
+#formations .header {
+    height : 15vh;
+    background-color: var(--color-green);
     text-align: center;
 }
 
-.form-header h1 {
+#formations h1 {
     max-width: 30vw;
     min-width: 15vw;
     color : rgb(240, 240, 240);
@@ -614,69 +528,57 @@ hr {
     padding-bottom: 37.5px;
 }
 
-.form span {
+#formations span {
     color :rgb(88, 88, 88);
     font-weight: bold;
 }
 
-#form-article{
-    max-width: 90vw;
-    max-height : fit-content;
-    min-width: 90vw;
-    text-align: center;
-    background-color: white;
-    border-radius: 45px;
-    -webkit-box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68); 
-    box-shadow: 0px 6px 22px -3px rgba(153,153,153,0.68);
-    margin-left : 4%;
-}
 
-#accueil-article .ap-header {
+#a_propos .header {
     min-height : 25%;
     max-height : fit-content;
-    background-color: rgb(90, 218, 111);
+    background-color: var(--color-green);
     display: block;
     color : white;
 }
 
-#a_propos #accueil-article h2 {
+#a_propos h2 {
     font-size: 135%;
     padding-top: 1.25%;
     padding-bottom:30px;
     text-align: center;
 }
 
+#a_propos .container h2 {
+    color :rgb(90, 218, 111);
+}
+
 .ap-2nd-container {
     min-width: 70vw;
     max-width : auto ;
-    height : auto;
-    text-align: justify;
     margin-top : 1%;
     display: flex;
+    margin-left : 15%;
 }
 
 .ap-2nd-container p{
-    text-align: left;
-    margin-left: 4%;
-    margin-right: 4%;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 10%;
 }
 
-.ap-container {
+#a_propos .container {
     display : flex;
     text-align: justify;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.ap-container h2 {
-    color :rgb(90, 218, 111);
-}
-
 .ap-3rd-container {
     display : flex ;
     flex-direction: row;
     justify-content: space-around;
-    margin-top : 4.5%;
+    margin-top : 3%;
     padding-bottom : 17.5px;
 }
 
@@ -696,15 +598,13 @@ hr {
 }
 
 #contact #form-article {
-    min-width: 50vw;
-    max-width: 50vw;
+    width: 50vw;
     margin-left: 24%;
 }
 
 .contact-header {
-    background-color: rgb(90, 218, 111);
-    min-height: 10vh;
-    max-height: 10vh;
+    background-color: var(--color-green);
+    height: 10vh;
     border-radius: 35px 35px 0 0;
 }
 
@@ -716,8 +616,7 @@ hr {
 }
 
 .contact-content {
-    max-width: 45%;
-    min-width: 45%;
+    width: 45%;
     margin-left : 4%;
     text-align : left;
 }
@@ -829,7 +728,7 @@ footer p {
     border-radius: 25px;
 }
 
-#accueil a:visited {
+#accueil a:visited, #accueil a:link {
     color : rgb(90, 218, 111);
 }
 
@@ -845,7 +744,7 @@ footer p {
     border-radius: 25px;
 }
 
-#experiences a:visited, #formations a:visited {
+#experiences a:visited, #formations a:visited, #experiences a:link, #formations a:link {
     color : white;
 }
 

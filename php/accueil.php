@@ -1,7 +1,7 @@
-<article id="accueil-article">
-    <div class='accueil-header'>
+<article>
+    <div class='header'>
         <div class='pic'>
-            <!--<img src='img/pp.jpg'>-->
+            <img src='img/pp.jpg'>
         </div>
         <div id='txt'>
             <h1>Benoît Bronsard</h1>
@@ -9,13 +9,13 @@
             <h3>Je suis un élève appliqué, motivé et qui a soif d'apprendre. </h3>
         </div>
     </div>
-    <div class='accueil-container'>
-        <div class='accueil-container-left'>
+    <div class='container'>
+        <div class='container-left'>
             <span><h2>A propos de Moi</h2></span>
             <p>Actuellement en 1ère année de BTS SIO, j'ai choisi l'option SISR : Réseaux et Cybersécurité.</p>
             <p>Attiré par l’informatique et les nouvelles technologies depuis mon enfance, je souhaite me diriger vers la Cybersécurité. C’est un enjeu majeur de nos jours pour les entreprises et atteindre cet objectif se fera par l’acquisition des savoir-faire d’un vrai professionnel.</p>
         </div>
-        <div class='accueil-container-right'>
+        <div class='container-right'>
             <?php
                 require_once('functions.php');
                 $tab=\file_get_contents('data/accueil.yaml');
@@ -26,7 +26,7 @@
                     echo("<li><span>".$cle." :</span> ".$val."</li>");
                 }
                 echo("</ul>
-                      <a href='' download='img/icon-insta.png'>TELECHARGER CV</a>");
+                      <a href='img/BRONSARD Benoit - CV.pdf' download='BRONSARD Benoit - CV.pdf'>TELECHARGER CV</a>");
             ?>
         </div>
     </div>

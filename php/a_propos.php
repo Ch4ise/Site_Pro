@@ -4,25 +4,25 @@
     $ap2=yaml_parse($apropos);
 ?>
 
-<article id="accueil-article">
-    <div class='ap-header'>
+<article>
+    <div class='header'>
         <div>
             <h1>Benoît Bronsard</h1>
             <h2>- Etudiant en BTS SIO Spé. SISR-</h2>
         </div>
     </div>
-    <div class='ap-container'>
+    <div class='container'>
         <?php
             foreach($ap2 as $ap2_tab) {
                 foreach($ap2_tab as $cle=>$val){
                     if($cle=='Presentation'){
                         echo("<div class='ap-2nd-container'>
-                                <div>
+                                <div class='presentation'>
                                     <h2>Présentation</h2>
                                     <p>".nl2br($val)."</p>
                                 </div>
                                 <div class='pic'>
-                                    <img src=''>
+                                    <img src='img/pp.jpg'>
                                 </div>
                             </div>
                             <div class='ap-3rd-container'>");
