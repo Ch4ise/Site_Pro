@@ -309,7 +309,7 @@ hr {
 .accueil-container-left {
     max-width : 35vw ;
     min-width: 25vw;
-    margin-top : 9.25%;
+    margin-top : 8.5%;
     margin-left : 4%;
 }
 
@@ -325,7 +325,7 @@ hr {
     max-width : 45vw ;
     min-width: 25vw;
     max-height : 20vh;
-    margin-top : 8.5%;
+    margin-top : 5.75%;
 }
 
 .accueil-container-right ul{
@@ -368,7 +368,7 @@ hr {
     min-width: 45vw;
     background-color: rgb(90, 218, 111);
     text-align : center;
-    padding-bottom : 2vh;
+    padding-bottom : 70px;
 }
 
 .skills-container-right {
@@ -530,7 +530,7 @@ hr {
 }
 
 .form ul.tl{
-    margin:20px 0;
+    margin:20px 0 0 2.75%;
     padding:0;
     display:inline-block;
 
@@ -609,7 +609,7 @@ hr {
     max-width: 30vw;
     min-width: 15vw;
     color : rgb(240, 240, 240);
-    margin-top : 1.5%;
+    margin : 1.5% 0 0 1.75%;
     font-size: 1.75rem;
 }
 
@@ -650,7 +650,7 @@ hr {
     max-width : auto ;
     height : auto;
     text-align: justify;
-    margin-top : 3%;
+    margin-top : 1%;
 }
 
 .ap-2nd-container p{
@@ -666,11 +666,16 @@ hr {
     justify-content: space-around;
 }
 
+.ap-container h2 {
+    color :rgb(90, 218, 111);
+}
+
 .ap-3rd-container {
     display : flex ;
     flex-direction: row;
     justify-content: space-around;
-    margin-top : 7%;
+    margin-top : 4.5%;
+    padding-bottom : 17.5px;
 }
 
 .ap-3rd-container ul li {
@@ -679,6 +684,7 @@ hr {
 
 .ap-3rd-container ul li span{
     font-weight: 900;
+    color :rgb(70, 70, 70);
 }
 
 .ap-3rd-container-left, .ap-3rd-container-right {
@@ -705,7 +711,21 @@ hr {
     color : white;
     margin-top: 5%;
     font-size: 175%;
-    padding-bottom: 10%;
+    padding-bottom: 6.5%;
+}
+
+.contact-container-left div {
+    width : 75%;
+    margin : 1.75% 0 0 15%;
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color : white;
+}
+
+#contact img {
+    width : 5%;
 }
 
 .contact-container-right {
@@ -756,3 +776,46 @@ textarea::placeholder {
     color: white;
 }
 
+footer {
+    position : fixed ;
+    bottom : 0;
+    display : flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    background :rgb(129, 245, 148);
+    width: 100%;
+    height: 5.25%;
+}
+
+footer p {
+    margin : 2% 0 0 5%;
+    font-weight: 700;
+}
+
+.footer-left {
+    width: 40%;
+}
+
+.footer-right {
+    width : 60%;
+    display : flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-right div p {
+    margin : 1% 0 0 35%;
+}
+
+.footer-right div span {
+    font-weight: 500;
+}
+
+.footer-img{
+    margin : 0 0 0 20%;
+    width: 100%;
+}
+
+.footer-img img {
+    width: 20px;
+}

@@ -43,15 +43,35 @@ function createSection() {
     foreach ($section_data as $section_link=>$section_title){
         echo "  <section id='".$section_link."'>";
         include('php/'.$section_link.'.php');
-        echo "  </section>";
+        echo "</section>";
     }
 }
 
 
-function htmlfooter():void {
+function htmlfooter() {
     echo "      </body>
                 <footer>
-                    <button class='kc_fab_main_btn'>i</button>
+                    <div class='footer-left'>
+                        <p>Copyright © Bronsard Benoît - Tous droits réservés</p>
+                    </div>
+                    <div class='footer-right'>
+                        <div>
+                            <p>E-mail</p>
+                            <span>benoit.bronsard@hotmail.fr</span>
+                        </div>
+                        <div>
+                            <p>Tel</p>
+                            <span>06 02 07 70 03</span>
+                        </div>
+                        <div>
+                            <p>Online</p>
+                            <div class='footer-img'>
+                                <a href='https://www.instagram.com/benoit_bsd/' target='_blank'><img src='img/icon-insta.png'></a>
+                                <img src='img/icon-twitter.png'>
+                                <img src='img/icon-linkedin.png'>
+                            </div>
+                        </div>
+                    </div>
                 </footer>
             </html>";
 }

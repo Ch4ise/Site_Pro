@@ -5,7 +5,19 @@
     echo("<div class='contact-container'>
                 <div class='contact-container-left'>
                     <h2>N'hésitez pas à me contacter !</h2>
-                    <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.3413612478207!2d-0.3984980841501391!3d49.32675567556768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a5f010bac41bb%3A0x2cb1a5fb1ceef5aa!2s16%20Rue%20de%20la%20Passe%20d&#39;Aval%2C%2014750%20Saint-Aubin-sur-Mer!5e0!3m2!1sfr!2sfr!4v1640183326258!5m2!1sfr!2sfr' width='80%' height='80%' style='border: 5px solid white;'' allowfullscreen='' loading='lazy'></iframe>
+                    <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.3413612478207!2d-0.3984980841501391!3d49.32675567556768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a5f010bac41bb%3A0x2cb1a5fb1ceef5aa!2s16%20Rue%20de%20la%20Passe%20d&#39;Aval%2C%2014750%20Saint-Aubin-sur-Mer!5e0!3m2!1sfr!2sfr!4v1640183326258!5m2!1sfr!2sfr' width='67.5%' height='67.5%' style='border: 5px solid white;'' allowfullscreen='' loading='lazy'></iframe>
+                    <div>
+                        <img src='img/icon-address.png'>
+                        <p>Adresse : 16 rue de la passe d'aval, Saint Aubin sur Mer, 14750</p>
+                    </div>
+                    <div>
+                        <img src='img/icon-phone.png'>
+                        <p>N° de Téléphone : 06 02 07 70 03</p>
+                    </div>
+                    <div>
+                        <img src='img/icon-mail.png'>
+                        <p>Adresse Mail : webbenoit.bronsard@gmail.com</p>
+                    </div>
                 </div>")  ; 
 
     echo(   "<div class='contact-container-right'>
